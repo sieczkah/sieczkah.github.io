@@ -7,9 +7,62 @@
     /* Adjust the font size to increase the size */
 }
 
+.box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.box::before {
+    filter: blur(10px);
+    content: ' ';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    transform: skewX(1deg);
+    transition: 0.5s;
+}
+
+.box::after {
+    filter: blur(30px);
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    transform: skewX(1deg);
+    transition: 0.5s;
+}
+
+.box:hover:before,
+.box:hover:after {
+    transform: scaleX(1.05) scaleY(1.05);
+}
+
+.box:before,
+.box:after {
+    opacity: 0.3;
+    background: linear-gradient(148deg, #431b69, var(--bs-secondary));
+}
+
+.box .content {
+    padding: 0.7rem;
+    background: #1f2036;
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    z-index: 1;
+    transform: 0.5s;
+}
+
 .projects-card {
     position: relative;
-    border: 1px solid #3e175f;
+    border: 1px solid #3f175f00;
     overflow: visible;
 }
 
@@ -17,7 +70,7 @@
     transform: translate(-50%, 125%);
     width: 60%;
     border-radius: 1rem;
-    border: 1px solid #3e175f;
+    border: 1px solid var(--bs-info);
     background-color: var(--bs-info);
     color: var(--bs-light);
     padding: .5rem 1rem;
@@ -28,10 +81,8 @@
     transition: 0.3s ease-out;
 }
 
-/*Hover*/
 .projects-card:hover {
-    border-color: var(--bs-primary);
-    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+    border-color: #883ac9;
 }
 
 .projects-card:hover .card-button {
