@@ -1,0 +1,40 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+.badge-lg {
+    padding: 0.3em 1em;
+    /* Adjust the padding to increase the size */
+    font-size: 0.8em;
+    /* Adjust the font size to increase the size */
+}
+
+.projects-card {
+    position: relative;
+    border: 1px solid #3e175f;
+    overflow: visible;
+}
+
+.card-button {
+    transform: translate(-50%, 125%);
+    width: 60%;
+    border-radius: 1rem;
+    border: 1px solid #3e175f;
+    background-color: var(--bs-info);
+    color: var(--bs-light);
+    padding: .5rem 1rem;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.3s ease-out;
+}
+
+/*Hover*/
+.projects-card:hover {
+    border-color: var(--bs-primary);
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+
+.projects-card:hover .card-button {
+    transform: translate(-50%, 50%);
+    opacity: 1;
+}
