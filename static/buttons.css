@@ -9,7 +9,6 @@
     padding: 9px 4px;
     transition: all 0.2s ease;
     background: none;
-    color: white;
 }
 
 .cta:before {
@@ -29,7 +28,7 @@
 .cta span {
     position: relative;
     letter-spacing: 0.05em;
-    color: white;
+    color: var(--bs-primary);
     transition: all 0.3s ease-in-out;
     margin-right: .5rem;
 }

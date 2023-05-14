@@ -1,5 +1,8 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 
+/*                  */
+/* CARD FOR PROJECT */
+/*                  */
 .badge-lg {
     padding: 0.3em 1em;
     /* Adjust the padding to increase the size */
@@ -7,63 +10,14 @@
     /* Adjust the font size to increase the size */
 }
 
-.box {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.5s;
-    z-index: 1;
-}
-
-.box::before {
-    filter: blur(10px);
-    content: ' ';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    text-decoration: none;
-    transform: skewX(1deg);
-    transition: 0.5s;
-}
-
-.box::after {
-    filter: blur(30px);
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 8px;
-    transform: skewX(1deg);
-    transition: 0.5s;
-}
-
-.box:hover:before,
-.box:hover:after {
-    transform: scaleX(1.05) scaleY(1.05);
-}
-
-.box:before,
-.box:after {
-    opacity: 0.3;
-    background: linear-gradient(148deg, #431b69, var(--bs-secondary));
-}
-
-.box .content {
-    padding: 0.7rem;
-    background: #1f2036;
-    backdrop-filter: blur(10px);
-    border-radius: 8px;
-    z-index: 1;
-    transform: 0.5s;
-}
-
 .projects-card {
     position: relative;
     border: 1px solid #3f175f00;
     overflow: visible;
+    border-radius: 30px;
+    box-shadow: 15px 15px 30px #380e5fbb,
+        -10px -10px 30px #000000b2;
+    transition: 0.2s ease-in-out;
 }
 
 .card-button {
@@ -83,9 +37,11 @@
 
 .projects-card:hover {
     border-color: #883ac9;
+    box-shadow: 10px 10px 20px #883ac9;
 }
 
 .projects-card:hover .card-button {
     transform: translate(-50%, 50%);
     opacity: 1;
+
 }
