@@ -1,5 +1,12 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 
+.gradient-text {
+    background: -webkit-linear-gradient(left, var(--bs-primary) 40%, var(--bs-danger) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
 /*                  */
 /* CARD FOR PROJECT */
 /*                  */
@@ -15,8 +22,10 @@
     border: 1px solid #3f175f00;
     overflow: visible;
     border-radius: 30px;
-    box-shadow: 15px 15px 30px #380e5fbb,
+    box-shadow: 7px 7px 15px #5211979f,
         -10px -10px 30px #000000b2;
+    /* box-shadow: 15px 15px 30px #380e5fbb,
+        -10px -10px 30px #000000b2; */
     transition: 0.2s ease-in-out;
 }
 
@@ -37,7 +46,7 @@
 
 .projects-card:hover {
     border-color: #883ac9;
-    box-shadow: 10px 10px 20px #883ac9;
+    box-shadow: 2px 2px 20px 5px #883ac9;
 }
 
 .projects-card:hover .card-button {

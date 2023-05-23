@@ -7,28 +7,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hubert Sieczka</title>
 
+  <script src="https://kit.fontawesome.com/b9b4781349.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+  <link rel="stylesheet" href="static/main.css" />
   <link rel="stylesheet" href="static/animations.css" />
   <link rel="stylesheet" href="static/buttons.css" />
   <link rel="stylesheet" href="static/base.css" />
-  <script src="https://kit.fontawesome.com/b9b4781349.js" crossorigin="anonymous"></script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
-  <link rel="stylesheet" href="static/main.css" />
 </head>
-<body class="p-1 bg-secondary">
+<body class="p-1 bg-secondary text-light">
   <!-- BG ANIMATION -->
 
   <!-- NAVBAR -->
+  
   <div class="container-lg">
-    <nav class="navbar navbar-dark navbar-expand-md p-2 px-md-5 my-3">
+    <nav class="navbar navbar-dark navbar-expand-md px-md-5">
+
       <!-- Navbar social media icons -->
       <div class="navbar-brand">
+        <img src="static/img/logo.svg" alt="Hs logo" class="img-fluid w50">
+        
         <!-- LinkedIN -->
-        <a href="https://www.linkedin.com/in/hubert-sieczka/" class="link-success puff-in-center1"><i class="fa-brands fa-linkedin fa-xl"></i></i></a>
+        <!-- <a href="https://www.linkedin.com/in/hubert-sieczka/" class="link-success puff-in-center1"><i class="fa-brands fa-linkedin fa-xl"></i></a> -->
         <!-- Github Icon -->
-        <a href="https://github.com/sieczkah" class="px-1 link-success puff-in-center2"><i class="fa-brands fa-github fa-xl"></i></a>
+        <!-- <a href="https://github.com/sieczkah" class="px-1 link-success puff-in-center2"><i class="fa-brands fa-github fa-xl"></i></a> -->
         <!-- Mail Icon -->
-        <a href="mailto:hl.sieczka@gmail.com" class="px-1 link-success puff-in-center3"><i class="fa-solid fa-envelope fa-xl"></i></a>
+        <!-- <a href="mailto:hl.sieczka@gmail.com" class="px-1 link-success puff-in-center3"><i class="fa-solid fa-envelope fa-xl"></i></a> -->
       </div>
       <!-- Navbar toggle button -->
       <button class="navbar-toggler" type="button " data-bs-toggle="collapse" data-bs-target="#main-nav">
@@ -47,51 +51,31 @@
   </nav>
 <!--PAGE CONTENT  -->
 <!-- HERO SECTION -->
-<section class="hero p3" id="hero">
-  <div class="container-lg">
-    <div class="d-inline-flex">
-      <img
-        src="static/img/hs-profile.png"
-        class="img-fluid w-50"
-        alt="Bootstrap Themes"
-        width="700"
-        height="500"
-        loading="lazy"
-      />
-      <h1 class="display-5 fw-bold lh-1 mb-3">
-        Hubert Sieczka <br />
-        software developer <br />
-        <span text.success>based in Bilbao.</span>
-      </h1>
+<section class="container-fluid" id="hero">
+<div class="container d-flex align-items-center col-xxl-10 p-2">
+  <div class="row flex-lg-row-reverse align-items-center g-1 py-2">
+    <div class="col-6 col-sm-8 col-lg-4">
+      <img src="static/img/hs-profile.png" class="img-fluid" width="700" height="500" loading="lazy">
     </div>
-  </div>
-</section>
-<!-- ABOUT ME SECTION -->
-<section class="about py-3">
-  <div class="container text-center">
-    <div class="row g-2">
-      <div class="col-12 bg-info">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-        officia perspiciatis facilis dicta, maiores odio quis laborum porro
-        reprehenderit assumenda nulla! Pariatur ut sed labore error et
-        perferendis, mollitia autem.
-      </div>
-      <div class="col-sm col-lg-4 bg-info">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, hic nisi
-        dignissimos praesentium suscipit similique!
-      </div>
-      <div class="col-sm col-lg-4 bg-info">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ducimus
-        dicta doloribus eaque? Velit, aspernatur?
-      </div>
-      <div class="col-sm col-lg-4 bg-info">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, minus
-        saepe. Id et voluptates saepe.
+    <div class="col-lg-8">
+      <h1 class="display-5 fw-bold lh-1 mb-3">Hubert Sieczka <br> <span class="gradient-text">Software developer</span></h1>
+      <p class="lead"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nisi est aut debitis enim aliquid, repellat animi. Earum iste ipsam voluptatum asperiores magni sapiente delectus fuga recusandae. Quae, suscipit perferendis!</p>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+        <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
+        <button type="button" class="btn btn-success btn-lg px-4">Default</button>
       </div>
     </div>
   </div>
+</div>
 </section>
-<!--  -->
+<!-- Skill -->
+<section class="container-fluid" id="skills">
+  <div class="container-fluid col-xxl-10 p-2">
+    <h1>Skills</h1>
+  </div>
+
+</section>
+
 </body>
 
 </html>
