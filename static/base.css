@@ -6,6 +6,61 @@
     -webkit-text-fill-color: transparent;
 }
 
+#course-line {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(86deg, rgba(29, 33, 51, 1) 1%, rgba(82, 17, 151) 15%, rgba(82, 130, 216, 1) 33%, rgba(33, 215, 137, 1) 55%, rgba(33, 215, 137, 1) 70%, rgba(107, 87, 255, 1) 80%, rgba(82, 17, 151) 90%, rgba(29, 33, 51, 1) 99%);
+}
+
+/*                  */
+/* CARDS FOR SKiLLS */
+/*                  */
+
+.card-skill {
+    background: var(--bs-success);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, .08), 0 0 6px rgba(0, 0, 0, .05);
+    transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12);
+}
+
+.card-skill:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
+}
+
+.card-skill img {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    max-height: 120px;
+}
+
+.card-1 {
+    background-image: url(img/clean-code.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 120px;
+}
+
+.card-2 {
+    background-image: url(img/tools1.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 140px;
+}
+
+.card-3 {
+    background-image: url(img/sketchbook.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 100px;
+}
+
+.card-4 {
+    background-image: url(img/001-networking.png);
+    background-repeat: no-repeat;
+    background-position: 97%;
+    background-size: 90px;
+}
+
 
 /*                  */
 /* CARD FOR PROJECT */
