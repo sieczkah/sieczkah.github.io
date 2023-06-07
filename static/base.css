@@ -6,6 +6,12 @@
     -webkit-text-fill-color: transparent;
 }
 
+.gradient-text-projects {
+    background: -webkit-linear-gradient(right, var(--bs-primary) 40%, var(--bs-danger) 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 #course-line {
     background: rgb(0, 0, 0);
     background: linear-gradient(86deg, rgba(29, 33, 51, 1) 1%, rgba(82, 17, 151) 15%, rgba(82, 130, 216, 1) 33%, rgba(33, 215, 137, 1) 55%, rgba(33, 215, 137, 1) 70%, rgba(107, 87, 255, 1) 80%, rgba(82, 17, 151) 90%, rgba(29, 33, 51, 1) 99%);
@@ -70,18 +76,37 @@
     /* Adjust the padding to increase the size */
     font-size: 0.8em;
     /* Adjust the font size to increase the size */
+    background: var(--bs-info);
 }
+
+
 
 .projects-card {
     position: relative;
     border: 1px solid #3f175f00;
     overflow: visible;
     border-radius: 30px;
-    box-shadow: 7px 7px 15px #5211979f,
-        -10px -10px 30px #000000b2;
+    box-shadow: 7px 7px 10px #7b0bd698,
+        -10px -10px 15px #000000b6;
     /* box-shadow: 15px 15px 30px #380e5fbb,
         -10px -10px 30px #000000b2; */
     transition: 0.2s ease-in-out;
+}
+
+.projects-card.col-lg-5 {
+    position: relative;
+    border: 1px solid #3f175f00;
+    overflow: visible;
+    border-radius: 30px;
+    box-shadow: 7px 7px 10px #0bd681a3,
+        -10px -10px 15px #000000b6;
+    /* box-shadow: 15px 15px 30px #380e5fbb,
+        -10px -10px 30px #000000b2; */
+    transition: 0.2s ease-in-out;
+}
+
+#projects .projects-card {
+    background: #1D2133;
 }
 
 .card-button {
@@ -99,9 +124,25 @@
     transition: 0.3s ease-out;
 }
 
+.projects-card.col-lg-5:hover {
+    border-color: #21d789;
+    box-shadow: 2px 2px 20px 5px #21d789;
+}
+
 .projects-card:hover {
-    border-color: #883ac9;
-    box-shadow: 2px 2px 20px 5px #883ac9;
+    border-color: #7c21d7;
+    box-shadow: 2px 2px 20px 5px #7c21d7;
+}
+
+
+
+.projects-card:hover .badge-lg {
+    background-color: #7c21d7;
+}
+
+.projects-card.col-lg-5:hover .badge-lg {
+    background-color: #21d789;
+    color: black;
 }
 
 .projects-card:hover .card-button {
