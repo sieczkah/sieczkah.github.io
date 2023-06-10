@@ -6,4 +6,6 @@ $(document).ready(function () {
             return text === "Show timeline" ? "Hide timeline" : "Show timeline";
         });
     });
+
 });
+

@@ -1,6 +1,6 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 
-.secondary-lighter {
+.lighter-bg {
     background: #1D2133;
 }
 
@@ -160,8 +160,6 @@
 /*                  */
 
 
-
-
 /*           */
 /*           */
 /* TIME LINE */
@@ -169,6 +167,7 @@
 /*           */
 #timeline-section {
     margin-right: 10rem;
+    /* padding-left: 10rem; */
 }
 
 .main-timeline {

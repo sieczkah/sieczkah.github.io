@@ -1,3 +1,43 @@
+/* Regular button */
+.btn-scale:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgb(0, 0, 0), 0 4px 8px rgb(0, 0, 0);
+}
+
+/* SOCIALS */
+
+
+
+.social-btn {
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    font-family: 'Titillium Web', sans-serif;
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.556);
+    margin: 5px;
+    transition: 0.3s;
+}
+
+.social-btn span {
+    width: 0px;
+    overflow: hidden;
+    transition: 0.3s;
+    text-align: center;
+    margin-left: 5px;
+}
+
+.social-btn:hover {
+    width: 150px;
+    border-radius: 5px;
+}
+
+.social-btn:hover span {
+    padding: 2px;
+    width: 90px;
+}
+
+
 /* Show timeline */
 .show-timeline {
     text-decoration: none;
@@ -66,6 +106,7 @@
     padding: 9px 4px;
     transition: all 0.2s ease;
     background: none;
+
 }
 
 .cta:before {
