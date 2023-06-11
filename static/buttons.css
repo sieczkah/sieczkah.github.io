@@ -4,6 +4,27 @@
     box-shadow: 0 10px 20px rgb(0, 0, 0), 0 4px 8px rgb(0, 0, 0);
 }
 
+#profile-pic {
+    transform: scale(1.05);
+}
+
+
+.fa-arrow-right {
+    animation: arrow 1.5s infinite linear;
+}
+
+@keyframes arrow {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(.5rem);
+    }
+}
+
 /* SOCIALS */
 
 
@@ -98,7 +119,7 @@
 /* Mail and download button*/
 .cta {
     border: none;
-    width: 10rem;
+    width: 9rem;
     border-radius: 25px;
     position: relative;
     display: flex;
@@ -141,7 +162,8 @@
 
 .cta .download {
     margin: 7px 5px;
-    margin-right: 1.2rem;
+    padding: 3px 1px;
+    margin-right: 1rem;
     color: var(--bs-secondary);
     display: block;
     transform-origin: center center;
