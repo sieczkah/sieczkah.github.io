@@ -1,1 +1,1 @@
-# Published with firebase at www.siehub.site
+# Published with firebase at [siehub.site](https://siehub.site/)
