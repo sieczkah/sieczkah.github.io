@@ -4,6 +4,20 @@
     background: #1D2133;
 }
 
+.nav-item a:hover {
+    color: var(--bs-warning) !important;
+}
+
+.custom-active {
+    color: var(--bs-warning) !important;
+    /* Set the desired color */
+    text-decoration: underline !important;
+    /* Add underline */
+    font-weight: bold !important;
+    /* Make the font bold */
+}
+
+
 .h-underline {
     position: relative;
 
@@ -511,6 +525,10 @@
 }
 
 @media only screen and (max-width:479px) {
+    #hero {
+        padding-top: 40px;
+    }
+
     #timeline-section {
         margin-right: 1rem;
     }
