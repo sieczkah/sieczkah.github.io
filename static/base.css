@@ -8,6 +8,10 @@
     color: var(--bs-warning) !important;
 }
 
+#footer a:hover {
+    color: var(--bs-warning) !important;
+}
+
 .custom-active {
     color: var(--bs-warning) !important;
     /* Set the desired color */
